@@ -1,0 +1,4 @@
+# Russian strings go here for Rails i18n
+ru:
+  button_hide_sidebar: "Скрыть сайдбар"
+  button_show_sidebar: "Показать сайдбар"  

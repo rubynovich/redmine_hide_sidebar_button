@@ -1,0 +1,25 @@
+= Redmine hide sidebar button
+
+Adds a button that hides the sidebar
+
+== Installation
+
+  cd vendor/plugins
+  git clone git://github.com/rubynovich/redmine_hide_sidebar_button.git
+
+*or*
+
+  ./script/plugin -v install git://github.com/rubynovich/redmine_hide_sidebar_button.git
+
+== Update
+
+  cd vendor/plugins/redmine_hide_sidebar_button
+  git pull
+  
+*or*
+
+  ./script/plugin update
+
+== Remove
+
+  ./script/plugin remove redmine_hide_sidebar_button
