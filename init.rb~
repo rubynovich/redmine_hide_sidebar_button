@@ -3,7 +3,7 @@ require 'redmine'
 Redmine::Plugin.register :redmine_hide_sidebar_button do
   name '"Hide sidebar" button'
   author 'Roman Shipiev'
-  description 'Adds a button that hides the sidebar'
+  description 'Во время правки задачи и в Wiki возникают ситуации, когда сайдбар (серая область справа) мешает. Например, когда таблицы в Wiki слишком широкие. Модуль добавляет кнопку "Скрыть сайдбар", которая постредством Javascript расширяет основную область за счет удаления сайдбара. Сайдбар можно вернуть кнопкой "Показать сайдбар".'
   version '0.0.3'
   url 'https://github.com/rubynovich/redmine_hide_sidebar_button'
   author_url 'http://roman.shipiev.me'
