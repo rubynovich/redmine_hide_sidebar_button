@@ -1,0 +1,15 @@
+- if @gantt.present?
+  :css
+    #hide_button p {margin: 0;  padding: 0;}
+    #hide_button p {list-style-type:none; margin: 0px 2px 0px 0px; padding: 0px 0px 0px 0px;}
+    #hide_button a.delete {opacity: 0.4;}
+    #hide_button a.delete:hover {opacity: 1;}
+
+  #hide_button
+    %p
+      - if Rails::VERSION::MAJOR < 3
+        %a.icon.icon-zoom-out{:href=>"#", :onclick => "$('sidebar').hide();$('content').setStyle('width:auto');$$('span.show_sidebar').each(function(e){ e.show() });$$('span.hide_sidebar').each(function(e){ e.hide() });"}
+          = t(:button_hide_sidebar)
+      - else
+        %a.icon.icon-zoom-out{:href=>"#", :onclick => "$('#sidebar').hide();$('#content').css({'width':'99%'});"}
+          = t(:button_hide_sidebar)

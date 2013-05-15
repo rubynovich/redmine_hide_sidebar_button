@@ -1,4 +1,5 @@
 require 'redmine'
+require 'redmine_hide_sidebar/hooks'
 
 Redmine::Plugin.register :redmine_hide_sidebar_button do
   name '"Hide sidebar" button'
