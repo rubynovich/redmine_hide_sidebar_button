@@ -6,7 +6,7 @@ Redmine::Plugin.register :redmine_hide_sidebar_button do
   author 'Roman Shipiev'
   description 'Adds a button that hides the sidebar'
   version '0.0.3'
-  url 'https://github.com/rubynovich/redmine_hide_sidebar_button'
+  url 'https://bitbucket.org/rubynovich/redmine_hide_sidebar_button'
   author_url 'http://roman.shipiev.me'
 end
 
