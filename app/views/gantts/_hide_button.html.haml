@@ -7,9 +7,5 @@
 
   #hide_button
     %p
-      - if Rails::VERSION::MAJOR < 3
-        %a.icon.icon-zoom-out{:href=>"#", :onclick => "$('sidebar').hide();$('content').setStyle('width:auto');$$('span.show_sidebar').each(function(e){ e.show() });$$('span.hide_sidebar').each(function(e){ e.hide() });"}
-          = t(:button_hide_sidebar)
-      - else
-        %a.icon.icon-zoom-out{:href=>"#", :onclick => "$('#sidebar').hide();$('#content').css({'width':'99%'});"}
-          = t(:button_hide_sidebar)
+      %a.icon.icon-zoom-out{:href=>"#", :onclick => "$('#sidebar').hide();$('#content').css({'width':'99%'});"}
+        = t(:button_hide_sidebar)

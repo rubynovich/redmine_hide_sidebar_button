@@ -8,16 +8,11 @@ Redmine::Plugin.register :redmine_hide_sidebar_button do
   version '0.0.3'
   url 'https://bitbucket.org/rubynovich/redmine_hide_sidebar_button'
   author_url 'http://roman.shipiev.me'
+
+  requires_redmine :version_or_higher => '2.3.0'
 end
 
-if Rails::VERSION::MAJOR < 3
-  require 'dispatcher'
-  object_to_prepare = Dispatcher
-else
-  object_to_prepare = Rails.configuration
-end
-
-object_to_prepare.to_prepare do
+Rails.configuration.to_prepare do
   [:watchers_helper].each do |cl|
     require "hsb_#{cl}_patch"
   end
