@@ -1,0 +1,4 @@
+<% selector = ".#{watcher_css(watched)}" %>
+$('.hide_sidebar').remove();
+$('.show_sidebar').remove();
+$("<%= selector %>").each(function(){$(this).replaceWith("<%= escape_javascript watcher_link(watched, user) %>")});
